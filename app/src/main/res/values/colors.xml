@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<!-- Colors for the Login screen -->
+<color name="colorPrimaryDark">#2D5A55</color>
+<color name="colorPrimary">#358763</color>
+<color name="darkGray">#A9A9A9</color>
+<color name="hintGray">#CCCCCC</color>
+<color name="black">#FF000000</color>
+<color name="white">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+</resources>
