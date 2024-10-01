@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Root layout of the RegisterActivity screen -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +9,109 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Sign Up title text -->
+        <TextView
+            android:id="@+id/tvSignUpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SIGN UP"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="48dp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle text -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="FOR YOUR ACCOUNT"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp" />
+
+        <!-- Username input field -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your username"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:textColor="#80000000"
+            android:textColorHint="@color/hintGray"
+            android:textSize="16sp" />
+
+        <!-- Email input field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your email address"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#80000000"
+            android:textColorHint="@color/hintGray"
+            android:textSize="16sp" />
+
+        <!-- Password input field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your password"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textColor="#80000000"
+            android:textColorHint="@color/hintGray"
+            android:textSize="16sp" />
+
+        <!-- Sign Up button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button_backgroundgreen"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Decorative waves image at the bottom -->
+    <ImageView
+        android:id="@+id/ivWaves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/wavesgreen"
+        android:scaleType="centerCrop" />
+</RelativeLayout>
